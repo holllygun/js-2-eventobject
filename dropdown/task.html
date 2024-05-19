@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Выпадающие списки</title>
+    <link rel="stylesheet" href="task.css">    
+    <link rel="stylesheet" href="../../assets/css/style.css">    
+</head>
+<body>
+    <header class="header">
+        <div class="logo__container">
+          <a href="https://netology.ru/" class="logo__link"></a>
+        </div>
+        <h1 class="header__title">
+            Домашнее задание к занятию 1.3 «Объект события». Выпадающие списки.
+        </h1>
+    </header>
+    <main class="content">
+        <div class="card">
+            <div class="dropdown">
+                <div  class="dropdown__value">JavaScript</div>
+                <ul  class="dropdown__list">
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__link">
+                            JavaScript
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__link">
+                            PHP
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__link">
+                            Python
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__link">
+                            Fortran
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <script src="task.js"></script>
+</body>
+</html>
+<!-- 
+В элементе с классом dropdown__value содержится выбранное значение.
+
+Для того чтобы открыть меню, требуется проставить класс dropdown__list_active:
+
+<ul class="dropdown__list dropdown__list_active"></ul>
+Нажатие на элемент с классом dropdown__item при открытом списке должно:
+
+Закрывать список
+Устанавливать новое значение в элемент с классом dropdown__value
+Процесс реализации
+Сделайте сворачивание/разворачивание списка по нажатию на кнопку
+Сделайте замену значения по выбору соответствующего пункта меню
+Предусмотрите случай, когда на странице может одновременно находиться несколько таких кнопок
+Не забывайте запрещать переход по ссылке
+Подсказки (спойлеры)
+Используемые темы
+Событие click, метод addEventListener, обработчик события
+Свойство textContent
+Метод Array.from() или оператор распространения (spread, «...») для удобной навигации по найденным элементам
+Метод closest -->
